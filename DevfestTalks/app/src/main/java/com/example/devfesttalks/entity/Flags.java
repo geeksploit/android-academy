@@ -1,5 +1,5 @@
 package com.example.devfesttalks.entity;
 
-enum Flags {
+public enum Flags {
     RUSSIA
 }

@@ -1,8 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".TalkDetail">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/talk_datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/talk_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="@tools:sample/date/hhmm" />
+
+        <TextView
+            android:id="@+id/talk_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="@tools:sample/date/mmddyy" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/talk_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/dummy_talk_name" />
+
+    <TextView
+        android:id="@+id/talk_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/dummy_talk_address" />
+
+    <LinearLayout
+        android:id="@+id/talk_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/talk_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/label_android" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/talk_speaker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/talk_speaker_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/dummy_speaker_name" />
+
+        <TextView
+            android:id="@+id/talk_speaker_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/dummy_speaker_job" />
+
+        <TextView
+            android:id="@+id/talk_speaker_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/dummy_speaker_location" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/talk_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/dummy_talk_description" />
+
+</LinearLayout>

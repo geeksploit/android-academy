@@ -1,22 +1,22 @@
 package com.example.devfesttalks.entity;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Set;
 
 public class TalkCard {
 
-    private LocalDateTime dateTime;
+    private Date dateTime;
     private String name;
     private String address;
     private Set<Label> labels;
     private Speaker speaker;
     private String description;
 
-    public LocalDateTime getDateTime() {
+    public Date getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(LocalDateTime dateTime) {
+    public void setDateTime(Date dateTime) {
         this.dateTime = dateTime;
     }
 

@@ -10,7 +10,7 @@ import java.util.Set;
 public final class StringUtils {
 
     public static String getTime(Date dateTime) {
-        return new SimpleDateFormat("HH:MM", Locale.ENGLISH).format(dateTime);
+        return new SimpleDateFormat("HH:mm", Locale.ENGLISH).format(dateTime);
     }
 
     public static String getDate(Date dateTime) {

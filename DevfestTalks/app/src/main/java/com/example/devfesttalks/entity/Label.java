@@ -1,6 +1,6 @@
 package com.example.devfesttalks.entity;
 
-public final class Label {
+public final class Label implements Comparable<Label> {
 
     private final String name;
 
@@ -12,4 +12,8 @@ public final class Label {
         return name;
     }
 
+    @Override
+    public int compareTo(Label other) {
+        return name.compareTo(other.name);
+    }
 }
